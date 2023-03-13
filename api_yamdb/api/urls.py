@@ -8,7 +8,7 @@ from .views import (
     GenreViewSet,
     ReceiveToken,
     SignUp,
-    ReviewViewSet,
+    ReviewViewSet
 )
 
 
