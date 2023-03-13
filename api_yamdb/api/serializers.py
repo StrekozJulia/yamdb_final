@@ -30,12 +30,12 @@ class SingUpSerializer(serializers.Serializer):
                 username=attrs.get('username'),
                 email=attrs.get('email')).exists():
             pass
-        elif (User.object.filter(username=attrs.get('username')).exists()
+        if (User.object.filter(username=attrs.get('username')).exists()
                 and not User.object.filter(email=attrs.get('email')).exists()):
             raise serializers.ValidationError(
                 "Пользователь с таким username уже есть."
             )
-        elif (User.object.filter(email=attrs.get('email')).exists()
+        if (User.object.filter(email=attrs.get('email')).exists()
                 and not User.object.filter(
                     username=attrs.get('username')).exists()):
             raise serializers.ValidationError(
