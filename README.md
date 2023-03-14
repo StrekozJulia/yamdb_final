@@ -1,8 +1,6 @@
 # Групповой проект YaMDb собирает отзывы пользователей на произведения.
 
-Main branch status
-
-![main](https://github.com/strekozjulia/yamdb_final/workflows/Django-app/badge.svg)
+https://github.com/strekozjulia/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg
 
 ## Описание:
 Проект YaMDb собирает отзывы пользователей на произведения. Сами произведения в YaMDb не хранятся, здесь нельзя посмотреть фильм или послушать музыку.
